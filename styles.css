@@ -1,0 +1,419 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 360px;
+}
+
+html {
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: #020414;
+    background-color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+#ian {
+    max-width: 15%;
+    margin-left: 40%;
+    margin-bottom: 5%;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+nav {
+    margin-bottom: 10%;
+}
+
+
+nav ul {
+    padding-top: 2.5%;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 2%;
+}
+
+#home {
+    color: #53aedb;
+}
+
+nav #home:hover {
+    color: #4287f5;
+}
+
+nav a {
+    color: #020414;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+
+nav a:hover {
+    color: #4287f5;
+}
+
+nav a:focus {
+    color: #AFE5F9;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+h2 {
+    font-size: 1.75em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+.index {
+    display: grid;
+    place-items: center;
+}
+
+.blurb {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 5%;
+    padding: 1em;
+}
+
+.blurb div {
+    margin: 10%;
+}
+
+.blurb h3 {
+    text-transform: uppercase;
+}
+
+.blurb div img {
+    max-width: 10%;
+}
+
+.aboutme {
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: .1fr 1fr 1fr;
+    grid-gap: 2em;
+    animation: move 5s ease-in-out forwards;
+}
+
+.aboutme h2 {
+    grid-row-start: 1;
+}
+
+.aboutme img {
+    grid-row-start: 2;
+    background-color: #53aedb;
+    padding: 10px;
+    border-radius: 10%;
+    max-width: 50%;
+}
+
+.aboutme p {
+    grid-row-start: 3;
+}
+
+@keyframes move {
+    from {
+        margin-top: 10%;
+    }
+
+    to {
+        margin-top: 0%;
+    }
+}
+
+
+.resume {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.contact {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.contact img {
+    max-width: 15%;
+}
+
+.contact img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact div {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.phone-mail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.phone {
+    grid-column-start: 1;
+}
+
+.mail {
+    grid-column-start: 2;
+}
+
+.socials {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.socials li {
+    list-style-type: none;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #4287f5;
+}
+
+footer {
+    margin-top: 5%;
+    text-align: center;
+    padding: 5%;
+}
+
+@media screen and (min-width: 600px) {
+    * {
+        max-width: 600px;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+
+    nav li {
+        text-align: right;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    .home {
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 4em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 2.75em;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .blurb img{
+        max-width: 15%;
+    }
+
+    .contact div {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    * {
+        max-width: 1050px;
+    }
+
+    h1 {
+        font-size: 5em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .blurb {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 1em;
+    }
+
+    .blurb div img {
+        max-width: 15%;
+    }
+
+    .aboutme {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .25fr 1fr;
+        grid-gap: 2em;
+    }
+
+    .aboutme h2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+    }
+
+    .aboutme img {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        max-width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .aboutme p {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .contact div {
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    .contact img {
+        max-width: 10%;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    * {
+        max-width: 1536px;
+    }
+
+    nav {
+        margin-bottom: 1%;
+    }
+
+    nav ul {
+        padding: 2.5%;
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    }
+
+    nav li {
+        list-style: none;
+        display: inline-block;
+        text-align: right;
+    }
+
+    .home {
+        text-align: left;
+        color: #53aedb;
+    }
+
+    #home:hover {
+        color: #4287f5;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 5em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .blurb {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 1em;
+    }
+
+    .blurb div img {
+        max-width: 25%;
+    }
+
+    .aboutme {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .25fr 1fr;
+        grid-gap: 2em;
+    }
+
+    .aboutme h2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+    }
+
+    .aboutme img {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        max-width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .aboutme p {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .contact div {
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+}

@@ -118,24 +118,28 @@ h3 {
     max-width: 10%;
 }
 
+#organize p, #analyze p, #visualize p {
+    text-align: left;
+}
+
 .aboutme {
     display: grid;
     place-items: center;
     grid-template-columns: auto;
     grid-template-rows: .1fr 1fr 1fr;
-    grid-gap: 2em;
     animation: move 5s ease-in-out forwards;
 }
 
 .aboutme h2 {
     grid-row-start: 1;
+    margin-bottom: 5%;
 }
 
 .aboutme img {
     grid-row-start: 2;
     background-color: #53aedb;
     padding: 10px;
-    border-radius: 10%;
+    border-radius: 5%;
     max-width: 50%;
 }
 
@@ -181,17 +185,10 @@ h3 {
 
 .phone-mail {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     text-align: center;
 }
 
-.phone {
-    grid-column-start: 1;
-}
-
-.mail {
-    grid-column-start: 2;
-}
 
 .socials {
     margin-left: auto;
@@ -205,6 +202,10 @@ h3 {
 .socials a {
     text-decoration: none;
     color: #4287f5;
+}
+
+.socials a:hover {
+    color:blue;
 }
 
 footer {
@@ -317,6 +318,20 @@ footer {
         grid-row-start: 2;
     }
 
+    .phone-mail {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+    
+    .phone {
+        grid-column-start: 1;
+    }
+    
+    .mail {
+        grid-column-start: 2;
+    }
+
     .contact div {
         margin-top: 1%;
         margin-bottom: 1%;
@@ -324,6 +339,15 @@ footer {
 
     .contact img {
         max-width: 10%;
+    }
+
+    .socials h3 {
+        display: none;
+    }
+
+    .socials li { 
+        display: inline-block;
+        margin: 2em;
     }
 }
 

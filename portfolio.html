@@ -27,16 +27,61 @@
     <main role="main">
         <section class="portfolio">
             <h1>Portfolio</h1>
-            <iframe title="MCU Power BI Project" width="1500" height="700"
-                src="https://app.powerbi.com/reportEmbed?reportId=b4149fa5-85fc-4def-b7e3-c7cf5f825c62&autoAuth=true&ctid=9ef9f489-e0a0-4eeb-87cc-3a526112fd0d"
-                frameborder="0" allowFullScreen="true"></iframe>
-            <figcaption><a
-                    href="https://app.powerbi.com/reportEmbed?reportId=b4149fa5-85fc-4def-b7e3-c7cf5f825c62&autoAuth=true&ctid=9ef9f489-e0a0-4eeb-87cc-3a526112fd0d">MCU Project</a>
-            </figcaption>
+
+            <article class="MCU">
+                <h2>MCU Power BI Dashboard Project</h2>
+                <p><span class="bold">Summary:</span> With my interest in Marvel Cinamatic Universe movies and data analysis, I created a fun MCU dashboard in Power BI
+                    to
+                    answer some questions I had regarding the franchise. </p>
+                <img src="graphics/MCU Project whole dash.png" alt=MCU Power BI Project Dashboard>
+                <p><span class="bold">Process:</span> I pulled a public MCU data set from Kaggle and converted it to an Excel file then uploaded
+                    it to
+                    Power BI. When digging into the Kaggle data set I found that it was three years out of date and
+                    missing
+                    5 of the newest MCU movies so I searched other websites and manually found and input the data I was
+                    looking for into a new excel file. Then, in Power BI I merged the tables together. After some data
+                    cleaning I created 4 new calculated columns and 2 new measures to answer my research questions. Then
+                    I
+                    created visuals to display some of the most interesting data insights I could find. </p>
+                <a
+                    href="https://app.powerbi.com/reportEmbed?reportId=b4149fa5-85fc-4def-b7e3-c7cf5f825c62&autoAuth=true&ctid=9ef9f489-e0a0-4eeb-87cc-3a526112fd0d">MCU
+                    Project File</a>
+                    <div class = "MCUpics">
+                    <h3 id="phase3text">Dashboard With Phase 3 Slicer Active</h3>
+                    <img src="graphics/MCU project phase 3 filter.png" id = "phase3">
+                    <h3>Power Query Column Distribution</h3>
+                    <img src="graphics/MCU Project Power Query .png" id="powerquery">
+                </div>
+            </article>
+
+            <article class="HomeDepot">
+                <h2>Excel Home Depot Project</h2>
+                <p><span class="bold">Summary:</span> What started as a simple excel school project slowly turned into a personal passion project
+                    as I expanded well beyond the assignment. I was working with a mock Home Depot data set and the
+                    assignment was to create a simple graph with a pivot table, but as I worked, I became curious of the
+                    data and decided to make it a personal project. I created an interactive dashboard with slicers and
+                    forecast orders for the next quarter as well as delivery times by region and more!</p>
+                <img src="graphics/Excel project dash.png" alt=MCU Power BI Project Dashboard>
+                <p><span class="bold">Process:</span> I first created my pivot tables from the data and mapped out what questions I want to
+                    answer. Then I used my pivot tables to create the graphs and slicers I would need. For my order
+                    forecasting I decided to use a custom four month weighted moving average. I saw that the trend line
+                    was mostly flat, and the variability was mostly seasonal, so I weighted the same month last year to
+                    50% and the previous 3 months 30%, 10% and 10% respectively. Then I formatted the dashboard, and a
+                    had some interesting insights. </p>
+                <a
+                    href="graphics/Excel Home Depot Project.xlsx">Excel Home Depot Project File</a>
+                    <div class = "HomeDepotpics">
+                        <h3 id="pivottext">Example Pivot Table Sheet</h3>
+                        <img src="graphics/Excel project pivot table.png" id = "pivot">
+                        <h3>Raw Data Table</h3>
+                        <img src="graphics/Excel project raw data.png" id="raw">
+                    </div>
+                </article>
+
         </section>
     </main>
     <footer>
-        <p>&copy; Copyright <span id = "current-year"></span> Ian Branstetter.</p>
+        <p>&copy; Copyright <span id="current-year"></span> Ian Branstetter.</p>
         <p>Pittsburgh, PA</p>
     </footer>
     <script src="script.js"></script>

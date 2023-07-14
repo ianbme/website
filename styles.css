@@ -57,7 +57,7 @@ nav li {
 }
 
 nav #home:hover {
-    color: #4287f5;
+    color: #AFE5F9;
 }
 
 nav a {
@@ -157,11 +157,50 @@ h3 {
     }
 }
 
+.portfolio h2 {
+    margin-top: 100px;
+}
 
-.resume {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    text-align: center;
+.portfolio h3 {
+    color:#4287f5;
+}
+
+.portfolio p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.portfolio a {
+    margin-bottom: 50px;
+    font-weight: bold;
+    color:#53aedb;
+}
+
+.portfolio a:hover {
+    color:#AFE5F9;
+}
+
+.bold {
+    font-weight: bold;
+    color:darkblue;
+}
+
+.MCU img, .HomeDepot img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.MCUpics, .HomeDepotpics {
+    padding-top: 20px;
+}
+
+.MCUpics h3, .HomeDepotpics h3 {
+    padding: 20px 0px 10px 0px;
+}
+
+.resume h1 {
+    margin-bottom: 100px;
 }
 
 .contact {
@@ -318,6 +357,68 @@ footer {
         grid-row-start: 2;
     }
 
+    .MCUpics {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 4fr;
+        margin-top: 50px;
+    }
+    
+    .MCUpics h3 {
+        font-size: large;
+        padding-top: 25px;
+    }
+    
+    .MCUpics img {
+        grid-row: 2;
+    }
+    
+    #phase3 {
+        transform: translateX(-120px);
+        max-width: 120%;
+    }
+
+    #phase3text {
+        transform: translateX(-120px);
+    }
+    
+    #powerquery {
+        max-width: 165%;
+    }
+
+    .HomeDepotpics {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 4fr;
+        margin-top: 50px;
+    }
+    
+    .HomeDepotpics h3 {
+        font-size: large;
+        padding-top: 25px;
+    }
+    
+    .HomeDepotpics img {
+        grid-row: 2;
+    }
+    
+    #pivot {
+        transform: translateX(-120px);
+        max-width: 120%;
+    }
+
+    #pivottext {
+        transform: translateX(-120px);
+    }
+    
+    #raw {
+        max-width: 150%;
+    }
+
+    .resume iframe {
+        height: 1200px;
+    }
+
     .phone-mail {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -435,6 +536,8 @@ footer {
         grid-column-start: 2;
         grid-row-start: 2;
     }
+
+    
 
     .contact div {
         margin-top: 1%;

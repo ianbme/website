@@ -19,6 +19,7 @@ body {
     grid-template-rows: auto;
     animation-name: fade;
     animation-duration: 2s;
+    line-height: 1.25;
 }
 
 #ian {
@@ -34,6 +35,16 @@ body {
 
     to {
         opacity: 100%;
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateY(-900px);
+    }
+
+    to {
+        transform: translateY(0px);
     }
 }
 
@@ -81,7 +92,7 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     animation-name: fade;
-    animation-duration: 3s;
+    animation-duration: 5s;
     color:#53aedb;
 }
 
@@ -105,6 +116,8 @@ h3 {
     grid-template-rows: 1fr 1fr 1fr;
     margin-top: 5%;
     padding: 1em;
+    animation-name: move;
+    animation-duration: 1s;
 }
 
 .blurb div {
@@ -158,6 +171,11 @@ h3 {
 .aboutme p {
     grid-row-start: 4;
     margin-top: -50px;
+}
+
+.MCU {
+    animation-name: move;
+    animation-duration: 1s;
 }
 
 .portfolio h2 {
@@ -217,6 +235,11 @@ h3 {
     color:#53aedb;
 }
 
+.boysandgirls {
+    animation-name: move;
+    animation-duration: 1s;
+}
+
 .videos {
     display: grid;
     place-items: center;
@@ -239,6 +262,8 @@ h3 {
     margin-right: auto;
     max-width: 15%;
     padding-bottom: 50px;
+    animation-name: move;
+    animation-duration: 1s;
 }
 
 .contact div {
@@ -570,6 +595,7 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         padding: 1em;
+        padding-bottom: auto;
     }
 
     .blurb div img {

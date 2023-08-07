@@ -132,7 +132,7 @@ h3 {
     display: grid;
     place-items: center;
     grid-template-columns: auto;
-    grid-template-rows: .1fr 1fr 1fr;
+    grid-template-rows: .1fr 1fr .1fr 1fr;
 }
 
 .aboutme h2 {
@@ -148,8 +148,16 @@ h3 {
     max-width: 50%;
 }
 
-.aboutme p {
+.aboutme h3 {
+    margin-top: 50px;
+    margin-right: auto;
     grid-row-start: 3;
+    font-size: 1.5em;
+}
+
+.aboutme p {
+    grid-row-start: 4;
+    margin-top: -50px;
 }
 
 .portfolio h2 {
@@ -161,8 +169,12 @@ h3 {
     color:#53aedb;
 }
 
-.portfolio p {
+.portfolio h4 {
     margin-top: 50px;
+}
+
+.portfolio p {
+    margin-top: 10px;
     margin-bottom: 50px;
 }
 
@@ -208,6 +220,10 @@ h3 {
 .videos {
     display: grid;
     place-items: center;
+}
+
+.community p {
+    margin-top: 50px; 
 }
 
 .contact {
@@ -317,6 +333,10 @@ footer {
         font-size: 2em;
     }
 
+    .aboutme p {
+        margin-top: -200px;
+    }
+
     .blurb img{
         max-width: 15%;
     }
@@ -384,9 +404,15 @@ footer {
         margin-left: auto;
     }
 
-    .aboutme p {
+    .aboutme h3 {
         grid-column-start: 2;
         grid-row-start: 2;
+        margin-bottom: 75px;
+    }
+
+    .aboutme p {
+        grid-column-start: 2;
+        grid-row-start: 3;
     }
 
     .MCUpics {

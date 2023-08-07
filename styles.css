@@ -6,9 +6,9 @@
 }
 
 html {
-    font-family: 'Wix Madefor Display', sans-serif;
-    color: #020414;
-    background-color: whitesmoke;
+    font-family: "quicksand", sans-serif;
+    color: whitesmoke;
+    background-color: #363657;
     margin-left: auto;
     margin-right: auto;
 }
@@ -61,7 +61,7 @@ nav #home:hover {
 }
 
 nav a {
-    color: #020414;
+    color: whitesmoke;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -82,6 +82,7 @@ h1 {
     text-transform: uppercase;
     animation-name: fade;
     animation-duration: 3s;
+    color:#53aedb;
 }
 
 h2 {
@@ -118,6 +119,11 @@ h3 {
     max-width: 10%;
 }
 
+#organize h3, #analyze h3, #visualize h3 {
+    padding: 5px 0px 20px 0px;
+    color:#53aedb;
+}
+
 #organize p, #analyze p, #visualize p {
     text-align: left;
 }
@@ -127,7 +133,6 @@ h3 {
     place-items: center;
     grid-template-columns: auto;
     grid-template-rows: .1fr 1fr 1fr;
-    animation: move 5s ease-in-out forwards;
 }
 
 .aboutme h2 {
@@ -147,22 +152,13 @@ h3 {
     grid-row-start: 3;
 }
 
-@keyframes move {
-    from {
-        margin-top: 10%;
-    }
-
-    to {
-        margin-top: 0%;
-    }
-}
-
 .portfolio h2 {
     margin-top: 100px;
+    color:#53aedb;
 }
 
 .portfolio h3 {
-    color:#4287f5;
+    color:#53aedb;
 }
 
 .portfolio p {
@@ -173,16 +169,16 @@ h3 {
 .portfolio a {
     margin-bottom: 50px;
     font-weight: bold;
-    color:#53aedb;
+    color:#AFE5F9;
 }
 
 .portfolio a:hover {
-    color:#AFE5F9;
+    color:#4287f5;
 }
 
 .bold {
     font-weight: bold;
-    color:darkblue;
+    color:#AFE5F9;
 }
 
 .MCU img, .HomeDepot img {
@@ -203,18 +199,30 @@ h3 {
     margin-bottom: 100px;
 }
 
-.contact {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+.club-titles {
+    font-size: 1.75em;
+    margin-top: 50px;
+    color:#53aedb;
 }
 
-.contact img {
-    max-width: 15%;
+.videos {
+    display: grid;
+    place-items: center;
+}
+
+.contact {
+    display: grid;
+}
+
+.contact h1 {
+    margin-bottom: 100px;
 }
 
 .contact img {
     margin-left: auto;
     margin-right: auto;
+    max-width: 15%;
+    padding-bottom: 50px;
 }
 
 .contact div {
@@ -228,10 +236,28 @@ h3 {
     text-align: center;
 }
 
+.phone-mail h3 {
+    padding: 20px;
+}
+
+.phone-mail a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.phone-mail a:hover {
+    color: #4287f5;
+}
+
 
 .socials {
     margin-left: auto;
     margin-right: auto;
+}
+
+.socials h3 {
+    padding-bottom: 10px;
+    color:#4287f5;
 }
 
 .socials li {
@@ -240,11 +266,11 @@ h3 {
 
 .socials a {
     text-decoration: none;
-    color: #4287f5;
+    color: #AFE5F9;
 }
 
 .socials a:hover {
-    color:blue;
+    color:#4287f5;
 }
 
 footer {
@@ -299,6 +325,11 @@ footer {
         margin-top: 5%;
         margin-bottom: 5%;
     }
+
+    .club-titles {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 }
 
 @media screen and (min-width: 1050px) {
@@ -336,6 +367,7 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: .25fr 1fr;
         grid-gap: 2em;
+        transform: translateY(-400px);
     }
 
     .aboutme h2 {
@@ -419,6 +451,12 @@ footer {
         height: 1200px;
     }
 
+    .videos {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .phone-mail {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -449,6 +487,7 @@ footer {
     .socials li { 
         display: inline-block;
         margin: 2em;
+        padding-top: 50px;
     }
 }
 
@@ -537,10 +576,12 @@ footer {
         grid-row-start: 2;
     }
 
-    
-
     .contact div {
         margin-top: 1%;
         margin-bottom: 1%;
+    }
+
+    .phone-mail img {
+        max-width: 50%;
     }
 }

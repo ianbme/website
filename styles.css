@@ -243,10 +243,11 @@ h3 {
 .videos {
     display: grid;
     place-items: center;
+    margin-top: 2em;
 }
 
 .community p {
-    margin-top: 50px; 
+    margin-top: 0.5em; 
 }
 
 .contact {
